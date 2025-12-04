@@ -1,0 +1,82 @@
+📌 Getaround Delay & Pricing Dashboard (Streamlit)
+
+Public URL:
+https://andreea73-getaround-delay-pricing-dashboard.hf.space/
+
+
+📌 Getaround Pricing API – URLs
+
+Space Hugging Face:
+https://huggingface.co/spaces/Andreea73/getaround_princing_API_Docker
+
+API healthcheck:
+https://andreea73-getaround-princing-api-docker.hf.space/
+
+Endpoint /predict (POST):
+https://andreea73-getaround-princing-api-docker.hf.space/predict
+
+Custom API documentation (HTML):
+https://andreea73-getaround-princing-api-docker.hf.space/docs
+
+Swagger UI (interactive docs):
+https://andreea73-getaround-princing-api-docker.hf.space/swagger
+
+
+🧪 Test the /predict endpoint online (Swagger)
+
+1. Go to:
+   https://andreea73-getaround-princing-api-docker.hf.space/swagger
+2. Click on **POST /predict**
+3. Click on **“Try it out”**
+4. Use the following JSON body:
+
+{
+  "input": [[140411, 100, 1, 1, 0, 0, 1, 1, 1, 106,
+             0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+             0, 0, 0, 0, 0, 0, 0, 0, 1,
+             0, 0, 0, 0, 0, 0, 0, 0, 0,
+             0, 0, 0, 0, 0, 0, 0]]
+}
+
+The response will be:
+{
+  "prediction": [ ... ]  # predicted rental price per day
+}
+
+
+💻 Test the prediction with curl (Terminal)
+
+curl -X POST "https://andreea73-getaround-princing-api-docker.hf.space/predict" \
+     -H "Content-Type: application/json" \
+     -d '{"input": [[140411,100,1,1,0,0,1,1,1,106,
+                     0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+                     0,0,1,
+                     0,0,0,0,0,0,0,0,0,
+                     0,0,0,0,0,0,0]]}'
+
+
+🐍 Test the prediction with Python (script: test_api.py)
+
+import requests
+
+url = "https://andreea73-getaround-princing-api-docker.hf.space/predict"
+
+payload = {
+    "input": [
+        [
+            140411, 100,
+            1, 1, 0, 0, 1, 1, 1, 106,
+            0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 1,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0
+        ]
+    ]
+}
+
+response = requests.post(url, json=payload)
+print("Status code:", response.status_code)
+print("Response JSON:", response.json())
+
+# In the Terminal:
+# python test_api.py
