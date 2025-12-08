@@ -1,0 +1,36 @@
+Ville,rank_temp,rank_humidity,rank_vent,rank_nuage,score_final
+Aix en Provence,4,1,11,6,5.4
+Bormes les Mimosas,2,5,18,1,5.5
+Marseille,1,7,33,3,9.200000000000001
+Nimes,7,6,12,12,9.3
+Cassis,3,9,31,2,9.5
+Aigues Mortes,6,11,20,11,11.3
+Gorges du Verdon,23,16,4,4,12.1
+Uzes,10,15,14,14,13.0
+Avignon,9,10,30,8,13.1
+Saintes Maries de la mer,5,17,26,10,13.100000000000001
+Collioure,8,14,28,16,15.600000000000001
+Le Havre,16,13,35,7,16.5
+La Rochelle,11,19,27,15,17.0
+St Malo,17,18,34,5,17.0
+Biarritz,12,23,21,18,17.799999999999997
+Grenoble,13,29,2,26,17.900000000000002
+Paris,15,2,15,35,18.4
+Lille,25,3,22,20,18.5
+Lyon,20,21,8,23,18.7
+Bayeux,21,12,32,13,19.0
+Bayonne,18,25,16,19,19.299999999999997
+Rouen,27,8,24,17,19.6
+Mont Saint Michel,28,20,23,9,19.7
+Toulouse,19,22,19,22,20.5
+Carcassonne,14,24,29,21,21.1
+Amiens,26,4,25,25,21.1
+Montauban,22,26,13,24,21.6
+Annecy,24,34,1,29,22.9
+Ariege,35,27,3,27,24.6
+Besancon,29,30,6,34,26.099999999999998
+Dijon,33,31,10,28,26.5
+Colmar,30,32,9,32,26.799999999999997
+Strasbourg,31,28,17,30,27.299999999999997
+Chateau du Haut Koenigsbourg,34,35,5,31,27.5
+Eguisheim,32,33,7,33,27.5
