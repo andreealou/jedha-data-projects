@@ -186,26 +186,33 @@ Useful for demos and deployment.
 
 ---
 
-## 11. Embedding Export (TensorFlow Projector)
+## 11. Embedding Export (TensorFlow Embedding Projector)
+
+To better understand what the model has learned, we export the weights of the **Embedding** layer
+and visualize them using the **TensorFlow Embedding Projector**.
+
+This step is a **qualitative sanity check**: it helps verify that the model learned meaningful
+semantic relationships between words, beyond simple classification performance.
+
+### Exported files
+
+- `vecs.tsv` contains the embedding vectors (one row per token)
+- `meta.tsv` contains the corresponding tokens (words)
+
+These two files can be loaded together in the TensorFlow Projector.
+
+### Export code
 
 ```python
 embedding_layer = model.get_layer("embedding")
-weights = embedding_layer.get_weights()[0]
+weights = embedding_layer.get_weights()[0]  # shape: (vocab_size, embedding_dim)
 vocab = vectorizer.get_vocabulary()
 
-with open("meta.tsv", "w") as m, open("vecs.tsv", "w") as v:
-    for i in range(1, 1001):
+with open("meta.tsv", "w", encoding="utf-8") as m, open("vecs.tsv", "w", encoding="utf-8") as v:
+    for i in range(1, 1001):  # skip index 0 (padding / reserved token)
         m.write(vocab[i] + "\n")
-        v.write("\t".join([str(x) for x in weights[i]]) + "\n")
-```
+        v.write("\t".join(map(str, weights[i])) + "\n")
 
-Explore embeddings at https://projector.tensorflow.org/
-
-Clusters observed:
-- promotional words  
-- frequent function words  
-- numbers  
-- names  
 
 ---
 
