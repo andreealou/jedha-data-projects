@@ -1,12 +1,12 @@
 # P4 – Supervised Machine Learning: Walmart Sales Forecasting
 
-## 🎯 Project Overview
+## Project Overview
 The objective of this project is to **predict weekly sales for Walmart stores** using historical data and explanatory features such as temperature, fuel price, CPI, and unemployment.  
 By analyzing past performance and external factors, this model aims to help decision-makers **anticipate future trends** and understand what drives store performance.
 
 ---
 
-## 📂 Dataset
+## Dataset
 **Source:** Provided by Jedha Bootcamp  
 **File:** `Walmart_Store_sales.csv`
 
@@ -38,7 +38,7 @@ By analyzing past performance and external factors, this model aims to help deci
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 Three supervised regression models were trained and compared:
 
 | Model | MAE | RMSE | R² |
@@ -47,11 +47,11 @@ Three supervised regression models were trained and compared:
 | Ridge Regression | 175,770 | 239,715 | 0.8769 |
 | Lasso Regression | **104,240** | **130,071** | **0.9638** |
 
-✅ **Lasso Regression** achieved the same performance as Linear Regression while performing **feature selection** by reducing irrelevant coefficients to zero.
+**Lasso Regression** achieved the same performance as Linear Regression while performing **feature selection** by reducing irrelevant coefficients to zero.
 
 ---
 
-## ⚙️ Regularization Optimization
+## Regularization Optimization
 Hyperparameter tuning was tested using **GridSearchCV** on Ridge and Lasso models.  
 However, optimized models yielded lower R² scores (≈0.79–0.89), meaning manual tuning provided better performance.  
 
@@ -59,7 +59,7 @@ However, optimized models yielded lower R² scores (≈0.79–0.89), meaning man
 
 ---
 
-## 📈 Model Evaluation
+## Model Evaluation
 Metrics used:
 - **MAE (Mean Absolute Error)** – average deviation between predictions and actual values  
 - **RMSE (Root Mean Squared Error)** – penalizes large errors  
@@ -72,14 +72,14 @@ Additional visualizations:
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 - Sales patterns vary seasonally, with clear peaks around holiday weeks.  
 - Lasso’s feature selection highlights that not all stores or weeks contribute equally to predictive accuracy.  
 - CPI and Unemployment show limited direct correlation with weekly sales, while Store ID and time-based features dominate.
 
 ---
 
-## 🪄 Tech Stack
+## Tech Stack
 - **Language:** Python 3  
 - **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn  
 - **Environment:** Jupyter Notebook / VS Code  

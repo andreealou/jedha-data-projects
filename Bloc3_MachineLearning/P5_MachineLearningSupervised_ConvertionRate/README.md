@@ -1,13 +1,13 @@
 # P5 – Supervised Machine Learning:  Conversion Rate Prediction
 
 
-## 🎯 Objective
+## Objective
 The goal of this supervised machine learning project was to **predict whether a user will convert (subscribe to a newsletter)** based on behavioral and demographic features.  
 The final model must be evaluated using the **F1-score**, as required by the challenge.
 
 ---
 
-## 📂 Dataset
+## Dataset
 Two CSV files were provided:
 - `conversion_data_train.csv` → training dataset with labels  
 - `conversion_data_test.csv` → test dataset without labels  
@@ -24,7 +24,7 @@ Two CSV files were provided:
 
 ---
 
-## 🔍 Data Analysis Summary
+## Data Analysis Summary
 - The dataset is **strongly imbalanced**: only a small percentage of users convert.  
 - The variable **`total_pages_visited`** is by far the most predictive:  
   users visiting more than 10–15 pages have a much higher chance of converting.  
@@ -32,14 +32,14 @@ Two CSV files were provided:
 
 ---
 
-## ⚙️ Preprocessing
+## Preprocessing
 - Handling categorical variables using **OneHotEncoder**  
 - Scaling numeric features with **StandardScaler**  
 - Stratified train/test split (`stratify=Y`) to preserve class balance  
 
 ---
 
-## 🧩 Models Tested
+## Models Tested
 Several families of supervised models were compared:
 
 | Model | Method | F1 (train) | F1 (test) | Comments |
@@ -55,7 +55,7 @@ Several families of supervised models were compared:
 
 ---
 
-## 🧮 Feature Engineering
+## Feature Engineering
 Two rounds of feature engineering were performed:
 
 ### V12 – General Feature Engineering
@@ -76,7 +76,7 @@ Two rounds of feature engineering were performed:
 
 ---
 
-## 🧠 Best Model
+## Best Model
 **Lasso Logistic Regression (penalty='l1', C=10, solver='saga')**
 
 | Metric | Train | Test |
@@ -88,14 +88,14 @@ Two rounds of feature engineering were performed:
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 - The **number of pages visited** is the dominant factor for predicting conversion.  
 - Users coming from **ads** and **returning visitors** convert more often.  
 - Age and country have minimal influence.
 
 ---
 
-## 💡 Business Recommendations
+## Business Recommendations
 1. **Encourage users to visit more pages**  
    - Improve UX and site navigation.  
    - Add recommended content and internal links.  
@@ -108,14 +108,14 @@ Two rounds of feature engineering were performed:
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 The **Lasso Logistic Regression** provided the best trade-off between simplicity, performance, and interpretability.  
 Boosting methods (AdaBoost, XGBoost) achieved similar F1-scores but at a higher computational cost.  
 Further gains could come from more **behavioral features** (time spent, click types, session duration) rather than new model architectures.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Python 3.12  
 - Pandas, NumPy, Scikit-learn, XGBoost  
 - Jupyter Notebook  
@@ -123,7 +123,7 @@ Further gains could come from more **behavioral features** (time spent, click ty
 
 ---
 
-## 📅 Versions Overview
+## Versions Overview
 | Version | Focus | Notebook |
 |----------|--------|-----------|
 | V7 | Logistic Regression, Ridge, Lasso, ElasticNet | ✅ Main baseline |

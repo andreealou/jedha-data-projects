@@ -1,6 +1,6 @@
-# 🧭 Project 2 – Collection, Storage & Management of Data: KAYAK
+# Project 2 – Collection, Storage & Management of Data: KAYAK
 
-## 🎯 Objective
+## Objective
 
 **What’s the best destination for your next holidays?**  
 This project aims to identify the top holiday destinations in France based on **weather forecasts** and **hotel availability**.  
@@ -8,7 +8,7 @@ The goal is to collect, store, and organize this data using **AWS cloud services
 
 ---
 
-## 🧩 Context
+## Context
 
 The data collected comes from two main sources:
 
@@ -19,7 +19,7 @@ The final dataset combines these two sources to recommend destinations with both
 
 ---
 
-## ⚙️ Project Steps
+## Project Steps
 
 ### 1. Data Collection
 - **Part 1:** GPS coordinates and city list creation.  
@@ -44,7 +44,7 @@ The final dataset combines these two sources to recommend destinations with both
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 
 - Using **APIs** to collect real-time weather data.
 - Implementing **web scraping** with Scrapy, handling anti-bot issues and dynamic pages.
@@ -54,7 +54,7 @@ The final dataset combines these two sources to recommend destinations with both
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Category | Tools / Libraries |
 |-----------|-------------------|
@@ -68,16 +68,16 @@ The final dataset combines these two sources to recommend destinations with both
 
 ---
 
-## 🗺️ Results
+## Results
 
-- ✅ **Top 5 destinations** in France with the best weather forecast.  
-- 🏨 **List of hotels** available in these destinations (with score and location).  
-- ☁️ **Data stored in S3** as a data lake.  
-- 🧱 **Structured database in RDS** accessible for further analysis.
+- **Top 5 destinations** in France with the best weather forecast.  
+- **List of hotels** available in these destinations (with score and location).  
+- **Data stored in S3** as a data lake.  
+- **Structured database in RDS** accessible for further analysis.
 
 ---
 
-## 📦 Deliverables
+## Deliverables
 
 - `Kayak.ipynb` → Complete pipeline notebook.  
 - AWS S3 and RDS screenshots in the PDF Presentation

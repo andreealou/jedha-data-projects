@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Présentation du projet
+## Présentation du projet
 
 **Les Derniers Flocons** est une application permettant d’anticiper l’impact du changement climatique sur les stations de ski des Alpes françaises.  
 Elle s'appuie sur plus de cinquante ans de données météorologiques (1970–2024) et sur plusieurs modèles statistiques pour :
@@ -18,14 +18,14 @@ L’application est destinée aux **professionnels de la montagne**, aux **déci
 
 ---
 
-## 🔗 Application déployée
+## Application déployée
 
-👉 **Accéder à l'application Streamlit :**  
+ **Accéder à l'application Streamlit :**  
 https://andreea73-les-derniers-flocons.hf.space/
 
 ---
 
-## 📊 Données utilisées
+## Données utilisées
 
 ### **1. Données météo (Open-Meteo API)**
 - 148 stations situées dans les Alpes françaises  
@@ -50,7 +50,7 @@ https://andreea73-les-derniers-flocons.hf.space/
 
 ---
 
-## 🛠️ Méthodologie
+## Méthodologie
 
 ### **1. Exploration & Visualisation**
 Analyse station par station :  
@@ -78,7 +78,7 @@ Résultats :
 
 ---
 
-## 🧩 Fonctionnalités de l’application
+## Fonctionnalités de l’application
 
 ### **🏠 Accueil**
 - Carte interactive des stations de ski  
@@ -114,7 +114,7 @@ avec interprétations pour chaque tranche.
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 les_derniers_flocons/
@@ -132,7 +132,7 @@ les_derniers_flocons/
 └── README.md                      # Documentation du projet
 ```
 
-## 🤝 Équipe
+## Équipe
 
 Projet réalisé dans le cadre de la formation Data Science (Jedha) par :  
 - **Ambre TRAN**  

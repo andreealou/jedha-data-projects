@@ -1,8 +1,8 @@
 # P1 – Exploratory Data Analysis: Tinder Dataset
 
-# 💘 Speed Dating Analysis – What Makes People Interested in Each Other?
+# Speed Dating Analysis – What Makes People Interested in Each Other?
 
-## 🎯 Project Objective
+## Project Objective
 This project was inspired by a Tinder business question:  
 > **"What makes people interested in each other?"**
 
@@ -10,7 +10,7 @@ Using real **Speed Dating data** from 551 participants and 8,378 dates, we analy
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 - **Source:** Speed Dating Experiment dataset (open source)
 - **Participants:** 551 individuals (men and women)
 - **Total dates:** 8,378  
@@ -26,7 +26,7 @@ Using real **Speed Dating data** from 551 participants and 8,378 dates, we analy
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 The dataset required significant cleaning before analysis:
 - Normalized all rating scales to 1–10.
 - Handled missing values (kept them for transparency in analysis).
@@ -35,7 +35,7 @@ The dataset required significant cleaning before analysis:
 
 ---
 
-## 📈 Exploratory Analysis
+## Exploratory Analysis
 
 ### 1. Participation and Missing Data
 - **98.7%** of participants answered the pre-event questionnaire.  
@@ -79,7 +79,7 @@ The **strongest observed link** was between `exphappy` (expected happiness) and 
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 | Insight | Observation |
 |----------|--------------|
@@ -91,7 +91,7 @@ The **strongest observed link** was between `exphappy` (expected happiness) and 
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 > This study identifies the factors most correlated with yes-decisions,  
 > but no single clear determinant emerged — except for **optimism** and **expected happiness** in meeting someone.
 
@@ -99,7 +99,7 @@ Human connection remains complex and cannot be fully explained by demographic or
 
 ---
 
-## 🧰 Tools & Libraries
+## Tools & Libraries
 - **Python**
 - **Pandas**, **NumPy**
 - **Matplotlib**, **Seaborn**

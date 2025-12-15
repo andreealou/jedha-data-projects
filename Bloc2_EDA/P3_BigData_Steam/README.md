@@ -1,11 +1,11 @@
 # P3 – Big Data Pipeline: Steam / Spark / Redshift
 
-## 🎯 Project Objective
+## Project Objective
 The goal of this project is to build a complete Big Data architecture to collect, store, and analyze a large volume of data from the **Steam** platform, in order to identify key trends in the video game market (pricing, developers, publishers, popularity, etc.).
 
 ---
 
-## 🧩 Project Architecture
+## Project Architecture
 
 ### 1. **Data Collection and Storage**
 - Raw dataset available on a public S3 bucket:  
@@ -85,7 +85,7 @@ In Databricks, the data is transformed and analyzed using **PySpark**:
 
 ---
 
-## 🧠 Technical Skills Demonstrated
+## Technical Skills Demonstrated
 - **Cloud & Big Data:**
   - AWS S3 (data storage)
   - AWS Redshift (data warehouse)
@@ -101,7 +101,7 @@ In Databricks, the data is transformed and analyzed using **PySpark**:
 
 ---
 
-## 📊 Key Results
+## Key Results
 - Complete Big Data pipeline implementation (S3 → Redshift → Databricks)  
 - Successful JDBC connection between Redshift and Databricks  
 - Cleaned and structured dataset for analysis  
@@ -109,7 +109,7 @@ In Databricks, the data is transformed and analyzed using **PySpark**:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 P3_BigData_Steam/
 │

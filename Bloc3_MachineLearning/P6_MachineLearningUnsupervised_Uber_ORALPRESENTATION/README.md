@@ -1,6 +1,6 @@
 # P6 – Unsupervised Machine Learning: Uber Pickup Clustering (NYC 2014–2015)
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes **Uber pickup patterns in New York City** using **unsupervised learning techniques**. The goal is to identify **geographical hot zones**, understand how demand evolves **throughout the day**, and compare trends between the **2014 GPS-based dataset** and the **2015 zone-based dataset**.
 
@@ -13,7 +13,7 @@ We apply:
 
 ---
 
-## 📂 Datasets
+## Datasets
 
 ### **2014 Uber GPS Datasets (April–September 2014)**
 7 CSV files with fields:
@@ -43,7 +43,7 @@ Contains:
 
 ---
 
-## 🛠️ Preprocessing
+## Preprocessing
 
 After concatenating the 2014 files, we:
 - Converted pickup timestamps to **datetime**
@@ -58,7 +58,7 @@ Full dataset:
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 ### Temporal Patterns
 - Morning peak around **8–9 AM** (commuting hours)  
@@ -73,7 +73,7 @@ Heatmaps reveal:
 
 ---
 
-## 🟦 K-Means Clustering (Exploratory Step)
+## K-Means Clustering (Exploratory Step)
 
 We first apply K-Means (`k=6`) to obtain a simple segmentation.
 
@@ -90,7 +90,7 @@ Main areas detected:
 
 ---
 
-## 🟩 DBSCAN – Density-Based Clustering (Main Model)
+## DBSCAN – Density-Based Clustering (Main Model)
 
 DBSCAN is the core model for discovering **organic hot zones**.
 
@@ -129,7 +129,7 @@ The animation was exported as a **video** for Google Slides.
 
 ---
 
-## 📍 Appendix – 2015 Pickup Analysis by Taxi Zone
+## Appendix – 2015 Pickup Analysis by Taxi Zone
 
 Since the 2015 dataset lacks GPS coordinates, we used **NYC taxi zones** instead.
 
@@ -147,7 +147,7 @@ Steps:
 
 ---
 
-## 📈 Comparison 2014 vs 2015
+## Comparison 2014 vs 2015
 
 - 2014: GPS precision → fine-grained DBSCAN clusters  
 - 2015: Zone aggregation → macro-level validation  
@@ -156,7 +156,7 @@ Steps:
 
 ---
 
-## 💡 Final Insights & Recommendations
+## Final Insights & Recommendations
 
 - Uber can optimize **driver positioning** based on hourly cluster patterns  
 - Anticipate **surge pricing** at airports and nightlife zones  
@@ -168,6 +168,6 @@ Steps:
 
 ---
 
-## ⚙️ Installation & Requirements
+## Installation & Requirements
 
 Python 3.10+ pandas numpy matplotlib seaborn geopandas contextily scikit-learn plotly

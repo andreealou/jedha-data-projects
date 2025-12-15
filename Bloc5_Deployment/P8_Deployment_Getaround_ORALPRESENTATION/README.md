@@ -6,7 +6,7 @@ This project reproduces Getaround’s internal 2017 analysis regarding late retu
 
 ---
 
-# 🧭 Project Overview
+# Project Overview
 
 Getaround enables peer-to-peer car rentals through two check-in flows:
 
@@ -25,7 +25,7 @@ Main questions:
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```
 .
@@ -41,7 +41,7 @@ Main questions:
 
 ---
 
-# 📊 1. Delay Analysis (EDA)
+# 1. Delay Analysis (EDA)
 
 ## 1.1 Key Metrics
 
@@ -86,7 +86,7 @@ Early returns are surprisingly common.
 
 ---
 
-# 🔥 2. Conflict Detection
+# 2. Conflict Detection
 
 A conflict occurs when:
 
@@ -104,7 +104,7 @@ Result → **172 operational conflicts**, mostly when gaps < 60 min.
 
 ---
 
-# 🧮 3. Minimum Gap Threshold Simulation
+# 3. Minimum Gap Threshold Simulation
 
 Business rule tested:
 
@@ -124,7 +124,7 @@ Recommendation: adopt a **60–90 min** buffer.
 
 ---
 
-# 📈 4. Streamlit Dashboard
+# 4. Streamlit Dashboard
 
 Includes:
 
@@ -144,7 +144,7 @@ streamlit run streamlit_app.py
 
 ---
 
-# ⚙️ 5. Machine Learning Model (Pricing)
+# 5. Machine Learning Model (Pricing)
 
 Gradient Boosting model using:
 
@@ -165,7 +165,7 @@ preprocessor.joblib
 
 ---
 
-# 🌐 6. FastAPI – /predict Endpoint
+# 6. FastAPI – /predict Endpoint
 
 Run API:
 
@@ -205,7 +205,7 @@ Docs → `/docs` and `/redoc`.
 
 ---
 
-# 🚀 7. Deployment
+# 7. Deployment
 
 - API deployed on Hugging Face Spaces  
 - Dashboard deployable on Streamlit Cloud or Hugging Face  
@@ -213,7 +213,7 @@ Docs → `/docs` and `/redoc`.
 
 ---
 
-# 📝 8. Installation & Setup
+# 8. Installation & Setup
 
 ```bash
 git clone https://github.com/andreea73/getaround_project.git
@@ -227,7 +227,7 @@ uvicorn api_app:app --reload
 
 ---
 
-# 📌 9. Business Recommendations
+# 9. Business Recommendations
 
 - Adopt **60–90 min** minimum delay buffer  
 - Prioritise Mobile rentals  
@@ -236,7 +236,7 @@ uvicorn api_app:app --reload
 
 ---
 
-# 🎯 Conclusion
+# Conclusion
 
 This project includes:
 
